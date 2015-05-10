@@ -85,10 +85,10 @@ INSTALLED_APPS += ("gunicorn", )
 
 # URL that handles the media served from MEDIA_ROOT, used for managing stored files.
 # MEDIA_URL = 'https://s3.amazonaws.com/%s/' % AWS_STORAGE_BUCKET_NAME
-STATIC_ROOT = os.path.join(ROOT_DIR, 'public', 'static')
+# STATIC_ROOT = os.path.join(ROOT_DIR, 'public', 'static')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(ROOT_DIR, 'public', 'media')
+# MEDIA_ROOT = os.path.join(ROOT_DIR, 'public', 'media')
 MEDIA_URL = '/media/'
 
 # Static Assests
