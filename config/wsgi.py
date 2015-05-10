@@ -13,15 +13,19 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
+import sys
 import os
 
 from django.core.wsgi import get_wsgi_application
 # from whitenoise.django import DjangoWhiteNoise
 
+pwd = os.path.dirname(os.path.abspath(__file__))
+sys.path.index(0, os.path.join(pwd, os.pardir))
+
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use
 # mod_wsgi daemon mode with each site in its own daemon process, or use
-os.environ["DJANGO_SETTINGS_MODULE"] = "settings.production"
+os.environ["DJANGO_SETTINGS_MODULE"] = "config.settings.production"
 # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.production")
 
 # This application object is used by any WSGI server configured to use this
