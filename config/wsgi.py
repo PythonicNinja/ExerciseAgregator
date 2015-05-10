@@ -20,7 +20,7 @@ from django.core.wsgi import get_wsgi_application
 # from whitenoise.django import DjangoWhiteNoise
 
 pwd = os.path.dirname(os.path.abspath(__file__))
-sys.path.index(0, os.path.join(pwd, os.pardir))
+sys.path.insert(0, os.path.join(pwd, os.pardir))
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
 # if running multiple sites in the same mod_wsgi process. To fix this, use
