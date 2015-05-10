@@ -98,15 +98,15 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 # EMAIL
 # ------------------------------------------------------------------------------
-DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL',
-                         default='exercise_agregator <noreply@example.com>')
-EMAIL_HOST = env("DJANGO_EMAIL_HOST", default='smtp.sendgrid.com')
-EMAIL_HOST_PASSWORD = env("SENDGRID_PASSWORD")
-EMAIL_HOST_USER = env('SENDGRID_USERNAME')
-EMAIL_PORT = env.int("EMAIL_PORT", default=587)
-EMAIL_SUBJECT_PREFIX = env("EMAIL_SUBJECT_PREFIX", default='[exercise_agregator] ')
-EMAIL_USE_TLS = True
-SERVER_EMAIL = EMAIL_HOST_USER
+# DEFAULT_FROM_EMAIL = env('DJANGO_DEFAULT_FROM_EMAIL',
+#                          default='exercise_agregator <noreply@example.com>')
+# EMAIL_HOST = env("DJANGO_EMAIL_HOST", default='smtp.sendgrid.com')
+# EMAIL_HOST_PASSWORD = env("SENDGRID_PASSWORD")
+# EMAIL_HOST_USER = env('SENDGRID_USERNAME')
+# EMAIL_PORT = env.int("EMAIL_PORT", default=587)
+# EMAIL_SUBJECT_PREFIX = env("EMAIL_SUBJECT_PREFIX", default='[exercise_agregator] ')
+# EMAIL_USE_TLS = True
+# SERVER_EMAIL = EMAIL_HOST_USER
 
 # TEMPLATE CONFIGURATION
 # ------------------------------------------------------------------------------
